@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kalkulator</title>
+</head>
+<body>
+    <div>
+        <h1 id="hasil">hasil adalah</h1>
+        <input type="number" id="bil1">
+        <input type="number" id="bil2">
+        <button onclick="kali()">hasil</button>
+    </div>
+    <div>
+        <h1 id="jumlah">hasil</h1>
+        <input type="number" id="bil3">
+        <input type="number" id="bil4">
+        <button onclick="tambah()">jumlah</button>
+    </div>
+
+    <script>
+        function perkalian(){
+            let a=document.getElementById('bil1').value;
+            let b=document.getElementById('bil2').value;
+            let hasil=a*b;
+            document.getElementById('hasil').innerHTML="hasil adalah "+hasil;
+        }
+
+        function pertambahan(){
+            let c=document.getElementById('bil3').value;
+            let d=document.getElementById('bil4').value;
+            let jumlah=parseInt(c)+parseInt(d);
+            document.getElementById('jumlah').innerHTML=jumlah;
+        }
+
+        function pembagian(){
+            let a=document.getElementById('bil1').value;
+            let b=document.getElementById('bil2').value;
+            let hasil=a/b;
+            document.getElementById('hasil').innerHTML=hasil;
+        }
+        
+        function pengurangan(){
+            let a=document.getElementById('bil1').value;
+            let b=document.getElementById('bil2').value;
+            let hasil=a-b;
+            document.getElementById('hasil').innerHTML=hasil;
+        }
+    </script>
+</body>
+</html>

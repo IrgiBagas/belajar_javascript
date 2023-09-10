@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belajarjavascript</title>
+</head>
+<body>
+    <h1 id="ganti">belajar javascript</h1>
+    <button onclick="halo()">javascript</button>
+    
+    <div>
+        <h1 id="ganti2">irgi</h1>
+        <button onclick="ganti()">ganti</button>
+    </div>
+
+    <div>
+        <h1 id="saya">nama saya</h1>
+        <input type="text" name="" id="nama">
+        <button onclick="namasaya()">saya adalah</button>
+    </div>
+
+    <script>
+        function halo(){
+            document.getElementById('ganti').innerHTML="javascript halo"
+        }
+        function ganti(){
+            document.getElementById('ganti2').innerHTML="bagas"
+        }
+
+        function namasaya(){
+            document.getElementById('saya').innerHTML=document.getElementById('nama').value;
+        }
+
+    </script>
+</body>
+</html>
